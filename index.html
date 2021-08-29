@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "stylesheet.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class = "main">
+            <div class = "topPanel">
+                <div class = "input">
+                    <p id = "input"></p>
+                </div>
+                <div class = "output">
+                    <p id = "output"></p>
+                </div>
+<!--            <div class = "history"><i class = "material-icons" id = "history" style = "font-size: 40px;">history</i></div> -->
+            </div>
+            <div class = "bottomPanel">
+
+                <button onclick = "clearAll()" class="operations">C</button>
+                <button class="operations">%</button>
+                <button class="operations">←</button>
+                <button onclick = "operation('/')" class="operations">÷</button>
+
+                <button onclick = "insertNum('7')">7</button>
+                <button onclick = "insertNum('8')">8</button>
+                <button onclick = "insertNum('9')">9</button>
+                <button onclick = "operation('*')" class="operations">x</button>
+
+                <button onclick = "insertNum('4')">4</button>
+                <button onclick = "insertNum('5')">5</button>
+                <button onclick = "insertNum('6')">6</button>
+                <button onclick = "operation('-')" class="operations">-</button>
+
+                <button onclick = "insertNum('1')">1</button>
+                <button onclick = "insertNum('2')">2</button>
+                <button onclick = "insertNum('3')">3</button>
+                <button onclick = "operation('+')" class="operations">+</button>
+
+                <button onclick = "insertNum('0'),insertNum('0')">00</button>
+                <button onclick = "insertNum('0')">0</button>
+                <button onclick = "insertNum('.')">.</button>
+                <button onclick = "calculate()" class="operations">=</button>
+
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
